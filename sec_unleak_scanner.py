@@ -690,7 +690,7 @@ def main():
             scanner.run_all_checks()
             results.append((rel_name, scanner))
 
-        print(f"\n{GREEN}{BOLD}✔ System-wide audit completed.{RESET}\n")
+        print(f"\n{GREEN}{BOLD}[OK] System-wide audit completed.{RESET}\n")
 
         total_files = sum(s.scanned_files_count for _, s in results)
         all_issues = []

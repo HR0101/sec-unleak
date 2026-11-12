@@ -56,7 +56,7 @@ def main():
 
         results[pkg] = {
             "exists": exists,
-            "status": "LEGITIMATE / FOUND" if exists else "⚠️ DANGER: NOT FOUND (Potential AI Hallucination / Slop Squatting!)"
+            "status": "LEGITIMATE / FOUND" if exists else "[WARN] DANGER: NOT FOUND (Potential AI Hallucination / Slop Squatting!)"
         }
 
     print(json.dumps(results, indent=2, ensure_ascii=False))

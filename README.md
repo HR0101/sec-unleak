@@ -1,4 +1,4 @@
-# sec-unleak 🛡️⚡
+# sec-unleak
 > **AI & Web App Security Checklist 100 Solution Kit**  
 > 「AIアプリの安全チェック 100選」を完全網羅する、**ローカル決定論的ツール** と **AI文脈推論スキル** のハイブリッド・セキュリティソリューション
 
@@ -9,7 +9,7 @@
 
 ---
 
-## 💡 コンセプトと二刀流アーキテクチャ
+## コンセプトと二刀流アーキテクチャ
 
 WebアプリケーションおよびAIエージェントのセキュリティ脅威は、大きく2つの性質に分かれます：
 1. **決定論的に検査できるもの**（APIキーの直書き、`.env` の誤公開、Git履歴、設定不備、生のSQL文字列結合、危険なコマンド実行など）
@@ -28,7 +28,7 @@ graph TD
 
 ---
 
-## ✨ 主な特徴
+## 主な特徴
 
 ### 1. ゼロ依存・超高速ローカル監査エンジン (`sec_unleak_scanner.py`)
 - **外部ライブラリ不要**: Python 3 の標準ライブラリのみで動作。`pip install` すら不要です。
@@ -52,7 +52,7 @@ graph TD
 
 ---
 
-## 📦 インストール方法
+## インストール方法
 
 ### 前提条件
 - macOS または Linux
@@ -89,7 +89,7 @@ cp -r .agents/skills/ai-sec-guardian ~/.gemini/skills/
 
 ---
 
-## 🚀 使い方
+## 使い方
 
 ### 1. macOSのFinderからワンクリック実行
 `sec_unleak.command` をダブルクリックするだけです。  
@@ -97,14 +97,14 @@ cp -r .agents/skills/ai-sec-guardian ~/.gemini/skills/
 
 ```text
   ================================================================
-      🛡️  AIアプリの安全チェック 100選・ローカル監査ランチャー
+        AIアプリの安全チェック 100選・ローカル監査ランチャー
   ================================================================
 
 実行モードを選択してください:
   [1] 現在のプロジェクトをスキャン ＋ HTMLレポートをブラウザで開く (デフォルト)
   [2] 自動修正付きスキャン (--fix: .gitignore自動追記 & Gitキャッシュ解除)
   [3] コンソールのみで高速スキャン (ターミナル出力のみ)
-  [4] 🌐 パソコン全体（全開発プロジェクト）を一括監査 ＋ 統合HTMLレポート
+  [4] パソコン全体（全開発プロジェクト）を一括監査 ＋ 統合HTMLレポート
   [q] 終了
 ```
 
@@ -122,7 +122,7 @@ cp -r .agents/skills/ai-sec-guardian ~/.gemini/skills/
 ./sec_unleak_scanner.py . --fix --html
 ```
 
-#### 🌐 パソコン全体（全Gitリポジトリ）を一括監査する
+#### パソコン全体（全Gitリポジトリ）を一括監査する
 ```bash
 ./sec_unleak_scanner.py --all --html
 ```
@@ -160,7 +160,7 @@ python3 .agents/skills/ai-sec-guardian/scripts/verify_package_hallucination.py p
 
 ---
 
-## 📋 「AIアプリの安全チェック 100選」完全対応マッピング
+## 「AIアプリの安全チェック 100選」完全対応マッピング
 
 | 分類 | カバーする主なチェック項目 (100選より) | 担当ソリューション |
 | :--- | :--- | :---: |
@@ -172,7 +172,7 @@ python3 .agents/skills/ai-sec-guardian/scripts/verify_package_hallucination.py p
 
 ---
 
-## 📂 ディレクトリ構成
+## ディレクトリ構成
 
 ```text
 sec-unleak/
@@ -193,6 +193,6 @@ sec-unleak/
 
 ---
 
-## 📄 ライセンス
+## ライセンス
 
 本プロジェクトは [MIT License](LICENSE) のもとで公開されています。
