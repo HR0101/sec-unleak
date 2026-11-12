@@ -1,0 +1,27 @@
+# Secret & Security exclusions
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.bak
+*.dump
+
+# Local Scan Output Reports (Contain local machine absolute paths)
+*.html
+!template.html
+
+# Intermediate Audit Work Artifacts
+.audit_cache/
+cards/
+cards_img/
+cards_*.txt
+cards_cleaned.json
+ocr_all.txt
+
+# macOS & Editor
+.DS_Store
+.idea/
+.vscode/
+__pycache__/
+*.pyc
