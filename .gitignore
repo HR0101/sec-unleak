@@ -7,6 +7,15 @@
 *.bak
 *.dump
 
+# Media & Image assets (Do not publish reference images)
+*.jpeg
+*.jpg
+*.png
+*.gif
+*.webp
+*.bmp
+*.svg
+
 # Local Scan Output Reports (Contain local machine absolute paths)
 *.html
 !template.html
